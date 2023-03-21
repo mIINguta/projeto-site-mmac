@@ -249,8 +249,8 @@ footer h4{
 }
  @media (max-width: 600px){
     
-    .sec-apresentacao{
-    height: 83vh;
+    .sec-apresentacao, .overlay{
+    height: 100vh;
     }
     .first-list, .second-list {
         padding:15px 20px;
@@ -272,9 +272,7 @@ footer h4{
     .div-footer{
         display: flex;
         flex-direction: column;
-        
         align-items: center;
-   
     }
     .footer-list, .list-social-media{
         text-align: center;
