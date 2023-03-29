@@ -1,22 +1,26 @@
 *{
     margin: 0px;
     box-sizing: border-box;
+    padding: 0px;
 }
 body{
-    background-image: url("imagens/background-apresentacao.jpg");
-    background-size: 100% 100%;
-    background-repeat: no-repeat;
-    background-position:center top;
     box-sizing: border-box;
     height: 100vh;
     font-family: 'Rajdhani', sans-serif;
     font-weight: 400;
 }
+html{
+    scroll-behavior: smooth;
+}
 p{
     text-align: justify;
     padding: 10px;
 }
+h1,h2,h3,h4{
+    font-family: 'Cormorant Garamond', serif; 
+}
 .nav-menu{ 
+    
     font-family: 'Rajdhani', sans-serif;
     font-weight: 400;
     display: flex;
@@ -39,7 +43,7 @@ a{
     color:white; 
 }
 .nav-menu a:hover{
-   color: orange;
+   color: #daa520;
    border-bottom: 1px solid white;
 }
 .first-list li{
@@ -63,10 +67,19 @@ hr{
     width: 100%;
     height: 100%;
     background-color: #373737;
-    opacity: .6;
+ }
+ .img-apresentacao{
+    background-image: url("imagens/background-apresentacao.jpg");
+    opacity: .4;
+    width: 100%;
+    height: 100%;
+    background-color: #373737;
+    background-size: 100% 100%;
+    background-repeat: no-repeat;
+    background-position:cover;
+
  }
  .sec-apresentacao{ 
-   font-family: 'Cormorant Garamond', serif; 
    color: white;
    font-size: 30px;
    display:flex;
@@ -74,41 +87,18 @@ hr{
    position:relative;
    justify-content: center;
    align-items: center;
-   height: 86vh;
+   height: 80vh;
    text-align: center;
+
  } 
  .sec-apresentacao h1,h4{
     padding:10px;
  }
- .sec-servicos{
-    font-family: 'Titillium Web', sans-serif;
-    color:white;
-    display: flex;
-    flex-direction:column;
-    align-items: center;
-    margin-top:10px;
-    background-color: #373737;
-    padding-top: 40px;
-    padding-bottom: 20px;
-    text-align: center; 
- }
-.sec-servicos li{
-    /* uso o inline-block para que ele aceite width e height*/
-    display:inline-block;
-    width:300px;
-    height:200px;
-    margin: 30px 20px;
-    box-shadow: 10px 25px 30px 10px black;
-}
-.sec-servicos li:hover{
-    transform: scale(1.1);
-}
-.sec-sobrenos{
+ .sec-sobrenos{
     display: flex;
     text-align: center;
     align-items: center;
-    justify-content: space-around;
-    padding: 10px 80px;
+    padding: 40px 80px;
     font-size: 20px;
 }
 .sec-sobrenos h2{
@@ -131,14 +121,57 @@ hr{
     background-color: black;
 }
 .btn-quemsomos:hover{
-    color:#0489B1;
+    color:#daa520;
 }
+ .sec-servicos{
+    color:white;
+    display: flex;
+    flex-direction:column;
+    align-items: center;
+    margin-top:10px;
+    background-color: #373737;
+    padding-top: 40px;
+    padding-bottom: 20px;
+    text-align: center; 
+ }
+.sec-servicos li{
+    /* uso o inline-block para que ele aceite width e height*/
+    display:inline-block;
+    width:300px;
+    height:200px;
+    margin: 30px 20px;
+    box-shadow: 10px 25px 30px 10px black;
+}
+.sec-servicos li:hover{
+    transform: scale(1.1);
+}
+
+.sec-desc-servicos{
+    display: none;
+    align-items: center;
+    justify-content: space-around;
+    padding: 50px;
+    background-color:#373737;
+    font-size: 20px;
+    margin-top: 1px;
+    color: white;
+    height: 100vh;
+}
+.sec-desc-servicos p,h3{
+    width: 300px;
+    margin-bottom: 10px;
+    padding: 0px;
+}
+.sec-desc-servicos a:hover{
+  transform: scale(2.2)
+}
+
 img{ 
     width: 100%;
     height: 100%;
 }
 figcaption{
-    font-family: 'Cormorant Garamond', serif;
+    font-family: 'Cormorant Garamond', serif; 
     color:black;
     font-size:24px;
     text-align: center;
@@ -146,20 +179,24 @@ figcaption{
     background-color: white;
     padding-bottom: 2px;
 }
+.fig-contatos span{
+    font-family: 'Rajdhani', sans-serif;
+}
 .sec-contatos{
-    font-family: 'Titillium Web', sans-serif;
-    display: grid;
-    justify-content: center;
+    display: flex;
+    flex-direction: column;
     padding: 30px 80px;   
     text-align: center;
+    align-items: center;
 }
 figure{
     display: inline-block;
     background-color: #373737;
-    height: 500px;
-    width: 300px;
-    border-radius: 10%;
     margin: 20px;
+    border-radius: 10%;
+    padding-bottom: 10px;
+   
+  
 }
 .fig-contatos figcaption{
     display: block;
@@ -170,23 +207,34 @@ figure{
     font-size: 24px;
     line-height: 35px;
     margin-top: 30px;
+    border-radius: 15%;
+    
 }
 figure .img-contato-marcelo{
-    width: 100px;
-    height: 150px;
-    border-radius: 30%;
+    height: 200px;
+    width: 209px;
+    border-radius: 30%; 
     margin-top: 20px;
 }
+
 figure .img-contato-elizeu{
-    width:200px;
-    height: 150px;
-    border-radius: 30%;
+    height: 200px;
+    width: 150px;
+    border-radius: 40%; 
     margin-top: 20px;
 }
 figure:hover{
     box-shadow: 5px 5px 20px 5px #373737;
 }
-
+.div-horarios{
+    width: 200px;
+    text-align: center;
+    margin-top: 15px;
+}
+.div-horarios span{
+    font-size: 20px;
+    font-family: 'Titillium Web', sans-serif;
+}
 .sec-localizacao{
     font-family: 'Titillium Web', sans-serif;
     display: flex;
@@ -208,11 +256,13 @@ figure:hover{
     border-color: #373737;
 }
 footer{
+    position: relative;
     padding-top: 20px;
     line-height: 30px;
     font-size: 18px;
     background-color: #373737;
     text-align: center;
+    
     
 }
 .div-footer{
@@ -231,7 +281,7 @@ footer h4{
 .footer-list, .list-social-media{
     list-style: none;
     text-align: left;
-    padding: 0px;
+    padding: 0px 5px;
     
 }
 .footer-list dl, .list-social-media dl{
@@ -253,18 +303,21 @@ footer h4{
     height: 100vh;
     }
     .first-list, .second-list {
-        padding:15px 20px;
+        padding:15px 15px;
         text-align: center;
     }
     .list-serv, iframe{
         padding:0px;
     }
-    .sec-sobrenos, .cards, .sec-localizacao{
+    .sec-sobrenos,.sec-desc-servicos, .cards, .sec-localizacao{
         flex-direction: column;
         padding: 20px 50px;
  }
     .div-text-sobrenos{
-        padding: 30px 0px
+        padding: 20px 0px;
+    }
+    .div-text-sobrenos p {
+        margin-bottom: 15px;
     }
     .div-text-sobrenos a{
       float: inherit;
@@ -278,5 +331,11 @@ footer h4{
         text-align: center;
         line-height: 35px;
     }
-
+    .div-horarios{
+        overflow-wrap: break-word;
+    }
  }
+
+
+
+ 

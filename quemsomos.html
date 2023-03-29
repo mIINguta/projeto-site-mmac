@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://unpkg.com/scrollreveal"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@500&family=Rajdhani:wght@300;400&family=Titillium+Web:wght@300&display=swap" rel="stylesheet">
+    <script src="https://kit.fontawesome.com/67fa80b427.js" crossorigin="anonymous"></script>   
+    <link rel="stylesheet" href="stylesq.css">
+    <title>Quem somos | M&M Assessoria Contábil</title>
+</head>
+<body>
+    <main> 
+        <header>
+        <nav class="nav-menu">
+                <ul class="first-list">
+                   <i class="fa-regular fa-envelope"></i>
+                    <span class="email-list">mmcontabilidade20@gmail.com</span>
+                    <li><a href="https://linktr.ee/mmservadm" target="_blank"><i class="fa-solid fa-link"></i></a></li>
+                    <li><a href="https://www.instagram.com/mmservadm/" target="_blank"><i class="fa-brands fa-instagram"></i></a></li> 
+                </ul>
+                <hr>
+                    <ul class="second-list">
+                    <li><a href="index.html">HOME</a></li>
+                    <li><a href="index.html#sec-servicos">SERVIÇOS</a></li> 
+                    <li><a href="index.html#sec-contatos">CONTATO</a></li>
+                    <li><a href="index.html#sec-localizacao">LOCALIZAÇÃO</a></li>
+                </ul>    
+        </nav> 
+    </header>
+    <section class="sec-quem-somos">
+        <div class="text-quemsomos">
+        <h1>NOSSA EQUIPE</h1>
+        <p>A equipe de contabilidade é composta por profissionais qualificados e experientes que trabalham em conjunto para oferecer serviços contábeis abrangentes e de qualidade para a sua empresa.</p>
+            <a href="#slider"> <i class="fa-solid fa-circle-arrow-down"></i></a>
+        </div>
+        <figure>
+        <img class="imagem-equipe" src="imagens/nossaequipe-quemsomos.jpeg" alt="Imagem da equipe M&M ASSESSORIA CONTÁBIL">
+        <figcaption>
+        </figcaption>
+        </figure>
+    </section>
+    <section class="sec-slide">
+    <section id="slider" class="slider">
+            <h4>Características Individuais</h4>
+        <div class="div-conteiner">
+            <div class="slides">
+            <input type ="radio" name="radio-btn" id="radio1" onclick=" mostrarConteudo('#marceloqs')">
+            <input type ="radio" name="radio-btn" id="radio2" value="radio2" onclick=" mostrarConteudo('#elizeuqs')">
+            <input type ="radio" name="radio-btn" id="radio3" value="radio3" onclick=" mostrarConteudo('#almirqs')">
+            <input type ="radio" name="radio-btn" id="radio4" value="radio4" onclick=" mostrarConteudo('#rosanaqs')">
+            <input type ="radio" name="radio-btn" id="radio5" value="radio5" onclick=" mostrarConteudo('#gustavoqs')">  
+            <div class="slide first">
+            <img src="imagens/marcelo-quemsomos.jpeg" alt="Imagem funcionário Marcelo"></a>
+            </div>
+            <div class="slide">
+            <img src="imagens/elizeu-quemsomos.jpeg" alt="Imagem funcionário Elizeu">
+            </div>
+            <div class="slide">
+            <img src="imagens/almir-quemsomos.jpeg" alt="Imagem funcionário Almir">
+            </div>
+            <div class="slide">
+            <img src="imagens/rosana-quemsomos.jpeg" alt="Imagem funcionário Rosana">
+            </div>
+            <div class="slide">
+            <img src="imagens/gustavo-quemsomos.jpeg" alt="Imagem funcionário Gustavo">
+            
+        </div>
+        </div>
+                    <!--navegação automatica-->
+                    <div class="navigation-auto">
+                        <div class="auto-btn1"></div>
+                        <div class="auto-btn2"></div>
+                        <div class="auto-btn3"></div>
+                        <div class="auto-btn4"></div>
+                        <div class="auto-btn5"></div>
+                    </div>
+        
+                </div>
+                    <!--navegação manual-->
+                    <div class="navigation-manual">
+                        <label for="radio1" class="manual-btn"></label>
+                        <label for="radio2" class="manual-btn"></label>
+                        <label for="radio3" class="manual-btn"></label>
+                        <label for="radio4" class="manual-btn"></label>
+                        <label for="radio5" class="manual-btn"></label>
+                        
+                    </div>
+                    <span class="aviso"> Use os botões para alternar as escolhas</span>
+            </section>
+             <section class="sec-text-individual">
+             </section>
+        </section>
+
+        <footer>
+            <div class="div-footer">
+            <div class="div-logo-footer">
+            <img class="img-sobrenos" src="imagens/logo escritório.png" alt="Imagem contábil ilustra">
+            </div>
+            <ul class="footer-list">
+                <dl>HOME</dl>
+                <li><a href="index.html">INÍCIO</a></li>
+                <li><a href="index.html#sec-servicos"> SERVIÇOS</a></li> 
+                <li><a href="index.html#sec-contatos"> CONTATO</a></li>
+                <li><a href="index.html#sec-localizacao"> LOCALIZAÇÃO</a></li>
+            </ul>   
+            <ul class="footer-list">
+                <dl>SERVIÇOS</dl>
+                <li><a id="le" href="index.html#sec-servicos" onclick="abrirDesc('#le')">LEGALIZAÇÃO DE EMPRESAS</a></li>
+                <li><a id="dp" href="index.html#sec-servicos" onclick="abrirDesc('#dp')"> DEPARTAMENTO PESSOAL</a></li> 
+                <li><a id="fisc" href="index.html#sec-servicos" onclick="abrirDesc('#fisc')"> FISCAL</a></li>
+                <li><a id="ctb" href="index.html#sec-servicos" onclick="abrirDesc('#ctb')"> CONTÁBIL</a></li>
+                <li><a id="sm" href="index.html#sec-servicos" onclick="abrirDesc('#sm')"> SOLUÇÕES PARA MEI</a></li>
+                <li><a id="cd" href="index.html#sec-servicos" onclick="abrirDesc('#cd')"> CERTIFICADO DIGITAL</a></li>
+            </ul>
+            <ul class="footer-list">
+                <dl>ESPAÇO DO CLIENTE</dl>
+                <li><a href="#sec-contatos"> CONTATO</a></li>  
+            </ul>
+            <ul class="list-social-media">
+                <li><a href="https://linktr.ee/mmservadm" target="_blank"><i class="fa-solid fa-link"></i></a></li>
+                
+                <li><a href="https://www.instagram.com/mmservadm/" target="_blank"><i class="fa-brands fa-instagram"></i></a></li>
+                </ul>    
+        </div> 
+        <h4>COPYRIGHT © 2023 | M&M ASSESSORIA CONTÁBIL | TODOS OS DIREITOS RESERVADOS</h4>
+        </footer>
+    </main>
+    <script src="script.js"></script>
+</body>
+</html>
