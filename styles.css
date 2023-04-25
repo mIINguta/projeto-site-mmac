@@ -20,7 +20,6 @@ h1,h2,h3,h4{
     font-family: 'Cormorant Garamond', serif; 
 }
 .nav-menu{ 
-    
     font-family: 'Rajdhani', sans-serif;
     font-weight: 400;
     display: flex;
@@ -43,7 +42,6 @@ a{
     color:white; 
 }
 .nav-menu a:hover{
-   color: #daa520;
    border-bottom: 1px solid white;
 }
 .first-list li{
@@ -57,6 +55,9 @@ a{
     width:30px;
     margin-right: 15px;
 }
+.first-list a:hover{
+    color:#029673;
+}
 hr{
     position: relative;
     color: white;
@@ -66,11 +67,11 @@ hr{
     position: absolute;
     width: 100%;
     height: 100%;
-    background-color: #373737;
+    background-color: #0c0434;
  }
  .img-apresentacao{
     background-image: url("imagens/background-apresentacao.jpg");
-    opacity: .4;
+    opacity: .7;
     width: 100%;
     height: 100%;
     background-color: #373737;
@@ -104,12 +105,7 @@ hr{
 .sec-sobrenos h2{
     border-bottom: 1px solid black;
 }
-.div-img-sobrenos{
-    width: 200px;
-    height: 150px;
-    background-color: black;
-    border-radius: 100%; 
-}
+
 .div-text-sobrenos{
     width: 100%;
     padding-left: 15px;
@@ -118,10 +114,10 @@ hr{
     width: 200px;
     padding:8px;
     float: right;
-    background-color: black;
+    background-color: #0c0434;
 }
 .btn-quemsomos:hover{
-    color:#daa520;
+    color: #029673;
 }
  .sec-servicos{
     color:white;
@@ -129,7 +125,7 @@ hr{
     flex-direction:column;
     align-items: center;
     margin-top:10px;
-    background-color: #373737;
+    background-color: #0c0434;
     padding-top: 40px;
     padding-bottom: 20px;
     text-align: center; 
@@ -151,7 +147,7 @@ hr{
     align-items: center;
     justify-content: space-around;
     padding: 50px;
-    background-color:#373737;
+    background-color:#0c0434;
     font-size: 20px;
     margin-top: 1px;
     color: white;
@@ -191,7 +187,7 @@ figcaption{
 }
 figure{
     display: inline-block;
-    background-color: #373737;
+    background-color: #0c0434;
     margin: 20px;
     border-radius: 10%;
     padding-bottom: 10px;
@@ -200,7 +196,7 @@ figure{
 }
 .fig-contatos figcaption{
     display: block;
-    background-color: #373737;
+    background-color: #0c0434;
     width:300px;
     color:white;
     text-align: center;
@@ -224,7 +220,7 @@ figure .img-contato-elizeu{
     margin-top: 20px;
 }
 figure:hover{
-    box-shadow: 5px 5px 20px 5px #373737;
+    box-shadow: 5px 5px 20px 5px #0c0434;
 }
 .div-horarios{
     width: 200px;
@@ -240,7 +236,7 @@ figure:hover{
     display: flex;
     flex-direction: column;
     text-align: center;
-    background-color: #373737;
+    background-color: #0c0434;
     color: white;
     padding: 20px 80px;
     align-items: center;
@@ -253,17 +249,15 @@ figure:hover{
     height: 100vh;
     width: 100%;
     border-radius: 8%;
-    border-color: #373737;
+    border-color: #0c0434;
 }
 footer{
     position: relative;
     padding-top: 20px;
     line-height: 30px;
     font-size: 18px;
-    background-color: #373737;
+    background-color: #0c0434;
     text-align: center;
-    
-    
 }
 .div-footer{
     padding: 30px 80px;
@@ -298,9 +292,8 @@ footer h4{
     text-align: center;
 }
  @media (max-width: 600px){
-    
-    .sec-apresentacao, .overlay{
-    height: 100vh;
+    .sec-apresentacao{
+        height: 88vh;
     }
     .first-list, .second-list {
         padding:15px 15px;
@@ -311,10 +304,10 @@ footer h4{
     }
     .sec-sobrenos,.sec-desc-servicos, .cards, .sec-localizacao{
         flex-direction: column;
-        padding: 20px 50px;
+        padding:20px;
  }
     .div-text-sobrenos{
-        padding: 20px 0px;
+        padding: 10px 0px;
     }
     .div-text-sobrenos p {
         margin-bottom: 15px;

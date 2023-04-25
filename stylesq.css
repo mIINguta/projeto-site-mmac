@@ -4,7 +4,7 @@
     box-sizing: border-box;
 }
 body{
-    background-color: #373737;
+    background-color: #0c0434;
     height: 100vh;
     font-family: 'Rajdhani', sans-serif;
     font-weight: 400;
@@ -38,7 +38,7 @@ a{
     color:white; 
 }
 .nav-menu a:hover{
-   color: #daa520;
+   color: #029673;
    border-bottom: 1px solid white;
 }
 .first-list li{
@@ -96,7 +96,7 @@ footer{
     margin-top: 10px;
     line-height: 30px;
     font-size: 18px;
-    background-color: #373737;
+    background-color: #0c0434;
     text-align: center;    
     border-top: 1px solid white;
 }
@@ -185,14 +185,13 @@ footer h4{
     width:20%;
     transition: 2s;
 }
-
 .navigation-manual{
     margin-top: 10px;
     display: flex;
 }
 
 .manual-btn{
-    border: 2px solid black;
+    border: 2px solid white;
     padding: 5px;
     border-radius: 10px;
     transition: 1s;
@@ -208,9 +207,9 @@ footer h4{
 .sec-text-individual{
     width: 400px;
     display: none;
+    align-items: center;
     line-height: 30px;
-    
-}
+   }
 .sec-quem-somos h1{
     font-family: monospace;
     width: 12ch;
@@ -235,14 +234,9 @@ white-space: nowrap;
        width: 0ch;
     }
 } 
-
 .sec-text-individual :nth-of-type(2){
-    text-align: center;
-    background-color:#0B173B;
-    transform: scale(1.1);
-    width: 150px;
     margin-top: 10px;
-    border-radius: 10px;
+    border-radius: 10%;
    }
 #radio1:checked ~ .first{
     margin-left: 0;
@@ -270,11 +264,9 @@ white-space: nowrap;
     transition: 1s;
     background-color: black;
 }
-
 .navigation-auto div:not(:last-child){
     margin-right:40px;
 }
-
 #radio1:checked ~.navigation-auto .auto-btn1{
     background: black;
 }
@@ -289,6 +281,20 @@ white-space: nowrap;
 }
 #radio5:checked ~.navigation-auto .auto-btn5{
     background: black;
+}
+
+.container-cards{
+    display: flex;}
+.card{
+    flex: 1;
+    transition:.3s;
+    height: 500px;
+    margin-right: -50px;
+    margin-left: -50px;
+    padding:20px 30px;
+}
+.card:hover{
+    flex:2;
 }
 
 @media (max-width: 600px){
@@ -327,9 +333,7 @@ white-space: nowrap;
         line-height: 35px;
     }
    .sec-text-individual :nth-of-type(2){
-    text-align: center;
-    background-color:#0B173B;
-    transform: scale(1.1);
+    
     margin-top: 10px;
     border-radius: 10px;
    }
