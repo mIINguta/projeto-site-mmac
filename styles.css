@@ -28,7 +28,7 @@ h1,h2,h3,h4{
 .first-list, .second-list{ 
     position:relative; 
     list-style: none; 
-    font-size:16px;
+    font-size:15px;
     color:white;
     padding:15px 120px;
     text-align: right;
@@ -293,7 +293,7 @@ footer h5{
         height: 88vh;
     }
     .first-list, .second-list {
-        padding:15px 15px;
+        padding:15px 13px;
     }
     .second-list{
         text-align: center;
