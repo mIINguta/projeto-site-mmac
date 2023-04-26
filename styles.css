@@ -30,30 +30,27 @@ h1,h2,h3,h4{
     list-style: none; 
     font-size:16px;
     color:white;
-    padding:20px 120px;
+    padding:15px 120px;
+    text-align: right;
 }
-.first-list, .second-list li{
+.first-list li, .second-list li{
     display:inline;
-    list-style: none;
-    vertical-align: middle;
+    margin: 0px 10px;
+}
+.first-list li:nth-child( 1 ){
+    /* compensando altuura*/
+    padding-top:9px;
+    float: left;
+}
+.first-list li:nth-of-type( n + 2 ){
+   font-size: 25px;
 }
 a{
     text-decoration: none;
     color:white; 
 }
-.nav-menu a:hover{
+.second-list a:hover{
    border-bottom: 1px solid white;
-}
-.first-list li{
-    float: right;
-    margin-left:30px;
-    width:30px;
-    text-align: center;
-    transform: scale(1.5);
-}
-.second-list li{
-    width:30px;
-    margin-right: 15px;
 }
 .first-list a:hover{
     color:#029673;
@@ -74,7 +71,7 @@ hr{
     opacity: .7;
     width: 100%;
     height: 100%;
-    background-color: #373737;
+    background-color: #0c0434;
     background-size: 100% 100%;
     background-repeat: no-repeat;
     background-position:cover;
@@ -291,12 +288,14 @@ footer h5{
     font-size: 30px;
     text-align: center;
 }
- @media (max-width: 600px){
+ @media (max-width: 700px){
     .sec-apresentacao{
         height: 88vh;
     }
     .first-list, .second-list {
         padding:15px 15px;
+    }
+    .second-list{
         text-align: center;
     }
     .list-serv, iframe{
