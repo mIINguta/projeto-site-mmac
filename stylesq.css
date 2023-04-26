@@ -39,7 +39,7 @@ a{
 }
 .nav-menu a:hover{
    color: #029673;
-   border-bottom: 1px solid white;
+   border-bottom: 1px solid  white;
 }
 .first-list li{
     float: right;
@@ -105,7 +105,7 @@ footer{
     display: flex;
     justify-content: space-evenly;
 }
-footer h4{
+footer h5{
     background-color: black;
     color: white;
 }

@@ -264,7 +264,7 @@ footer{
     display: flex;
     justify-content: space-evenly;
 }
-footer h4{
+footer h5{
     background-color: black;
     color: white;
 }
